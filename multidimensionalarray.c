@@ -12,16 +12,19 @@
 #include <stdlib.h>
 
 int main(void) {
-	int multi[4][4],i,j;
+	int i,j,s;
+	printf("Enter array size");
+	scanf("%d",&s);
 	printf("Enter 16 Values");
-	for(i=0;i<4;i++){
-		for(j=0;j<4;j++){
+	int multi[s][s];
+	for(i=0;i<s;i++){
+		for(j=0;j<s;j++){
 			scanf("%d",&multi[i][j]);
 		}
 	}
 	printf("MultiDimensional Array:\n");
-	for(i=0;i<4;i++){
-		for(j=0;j<4;j++){
+	for(i=0;i<s;i++){
+		for(j=0;j<s;j++){
 		printf("%d\t",multi[i][j]);
 		}
 		printf("\n");
